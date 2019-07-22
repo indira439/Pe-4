@@ -9,7 +9,7 @@ package com.stackroute.pe4;
  * Output: Is Harry here ? False
  */
 
-public class FindHarry {
+public class CheckPresence {
 
     public boolean find(String inputString) {
 

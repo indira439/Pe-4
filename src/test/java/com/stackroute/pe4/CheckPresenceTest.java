@@ -6,19 +6,19 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class FindHarryTest {
-    FindHarry findHarry;
+public class CheckPresenceTest {
+    CheckPresence checkPresence;
 
     /**Creates object before every test case*/
     @Before
     public void setUp() {
-        findHarry = new FindHarry();
+        checkPresence = new CheckPresence();
     }
 
     /**Clears the initialization after every test case*/
     @After
     public void tearDown() {
-        findHarry = null;
+        checkPresence = null;
     }
 
     @Test
@@ -26,7 +26,7 @@ public class FindHarryTest {
         //act
         String string = "This is Harry";
         //assert
-        assertEquals(true,findHarry.find(string));
+        assertEquals(true, checkPresence.find(string));
     }
 
     @Test
@@ -34,7 +34,7 @@ public class FindHarryTest {
         //act
         String string = "This is Henry";
         //assert
-        assertEquals(false,findHarry.find(string));
+        assertEquals(false, checkPresence.find(string));
     }
 
     @Test
@@ -42,11 +42,11 @@ public class FindHarryTest {
         //act
         String string = "";
         //assert
-        assertEquals(false,findHarry.find(string));
+        assertEquals(false, checkPresence.find(string));
     }
 
     @Test(expected = NullPointerException.class)
     public void givenNullShouldThrowException() {
-        findHarry.find(null);
+        checkPresence.find(null);
     }
 }
