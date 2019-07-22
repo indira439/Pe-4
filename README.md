@@ -9,6 +9,7 @@ without using any loop?
 For Example- Java is java again java again count number of occurrence of a in the given string
 
 
+
 ##Class Name:ReplaceCharacter
 
 2. Write a program to replace all d with f and all l with t in the given String
@@ -18,6 +19,7 @@ Original string: daily dry
 New String: faity fry
 
 
+
 ##Class Name:SortWords
 
 3. Write a program that sets up a String variable containing a paragraph of text of your choice.
@@ -25,11 +27,13 @@ a. Extract the words from the text and sort them into alphabetical order.
 b. Display the sorted list of words.
 
 
+
 ##Class Name:Transpose
 
 4. Write a program to transpose the given string.
 Input String : a quick brown fox jumps over the lazy dog
 Output String: a kciuq nworb xof spmuj revo eht yzal god
+
 
 
 ##Class Name:FindHarry
@@ -40,6 +44,7 @@ Input: This is Harry.
 Output: Is Harry here ? true
 Input : This is Henry.
 Output: Is Harry here ? False
+
 
 
 ##Class Name:MultipleOccurrences
