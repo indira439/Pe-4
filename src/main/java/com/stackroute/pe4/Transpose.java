@@ -14,10 +14,12 @@ public class Transpose {
 
     public String transposeString(String inputString) {
 
+        /**Return error message if input is empty*/
         if (inputString.length() == 0) {
             return "Text is empty";
         }
 
+        /**Return error message if input contains digits*/
         if (inputString.matches("[0-9]*")) {
             return "Text contains digits";
         }
@@ -26,6 +28,7 @@ public class Transpose {
         String outputString = "";
 
         for (int i = 0; i < tempString.length; i++) {
+            /**Transpose the string and return the output*/
             List<String> string = Arrays.asList(tempString[i].split(""));
             Collections.reverse(string);
             outputString = outputString + String.join("", string) + " ";
