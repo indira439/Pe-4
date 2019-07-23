@@ -38,7 +38,7 @@ public class OccurrenceOfCharacterTest {
     }
 
     @Test
-    public void givenEmptyStringShouldThrowUnexpected() {
+    public void givenEmptyStringShouldThrowUnexpectedError() {
         //act
         String inputString = "";
         //assert
@@ -46,7 +46,7 @@ public class OccurrenceOfCharacterTest {
     }
 
     @Test
-    public void givenStringWithWhiteSpacesShouldThrowUnexpected() {
+    public void givenStringWithWhiteSpacesShouldThrowUnexpectedError() {
         //act
         String inputString = " ";
         //assert
@@ -54,7 +54,7 @@ public class OccurrenceOfCharacterTest {
     }
 
     @Test
-    public void givenNumericStringShouldThrowUnexpected() {
+    public void givenNumericStringShouldThrowUnexpectedError() {
         //act
         String inputString = String.valueOf(12345);
         //assert
@@ -62,7 +62,7 @@ public class OccurrenceOfCharacterTest {
     }
 
     @Test
-    public void givenEmptyCharacterShouldThrowUnexpected() {
+    public void givenEmptyCharacterShouldThrowUnexpectedError() {
         //act
         String inputString = "Java is java again java again";
         //assert
@@ -70,7 +70,7 @@ public class OccurrenceOfCharacterTest {
     }
 
     @Test
-    public void givenDigitShouldThrowUnexpected() {
+    public void givenDigitShouldThrowUnexpectedError() {
         //act
         String inputString = "Java is java again java again";
         //assert

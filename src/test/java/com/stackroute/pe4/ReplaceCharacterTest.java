@@ -40,14 +40,14 @@ public class ReplaceCharacterTest {
     }
 
     @Test(expected = NullPointerException.class)
-    public void givenNullShouldThrowException()
+    public void givenNullShouldThrowNullPointerException()
     {
         assertEquals(null,replaceCharacter.replaceCharacter(null));
 
     }
 
     @Test
-    public void givenNumericStringShouldReturnException()
+    public void givenNumericStringShouldReturnErrorMessage()
     {
         assertEquals("Give valid string",replaceCharacter.replaceCharacter("1234"));
 
@@ -63,7 +63,7 @@ public class ReplaceCharacterTest {
     }
 
     @Test
-    public void givenStringWithoutDorIShouldReturnMessage()
+    public void givenStringWithoutDorIShouldReturnErrorMessage()
     {
         //act
         String expectedString = "String doesn't contains d or i";

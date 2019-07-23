@@ -41,13 +41,13 @@ public class TransposeTest {
     }
 
     @Test(expected = NullPointerException.class)
-    public void givenNullShouldThrowException() {
+    public void givenNullShouldThrowNullPointerException() {
         //assert
         assertEquals("",transpose.transposeString(null));
     }
 
     @Test
-    public void givenEmptyTextShouldReturnErrorMessage() {
+    public void givenEmptyStringShouldReturnErrorMessage() {
         //act
         String string = "";
         //assert

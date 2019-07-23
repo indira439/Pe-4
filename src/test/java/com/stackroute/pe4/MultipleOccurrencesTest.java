@@ -23,7 +23,7 @@ public class MultipleOccurrencesTest {
     }
 
     @Test
-    public void givenStringShouldReturnOccurrencesOfString() {
+    public void givenStringAndSearchWordShouldReturnMultipleOccurrencesOfSearchWordInString() {
         //act
         String inputString = "She sells seashells by the seashore";
         String expectedString = "4-6 10-12 27-29";
@@ -32,7 +32,7 @@ public class MultipleOccurrencesTest {
     }
 
     @Test
-    public void givenStringShouldReturnOccurrencesOfStringFailure() {
+    public void givenStringAndSearchWordShouldReturnMultipleOccurrencesOfSearchWordInStrinh() {
         //act
         String inputString = "She sells seashells by the seashore";
         String expectedString = "4 - 6 27 –29 ";
@@ -41,7 +41,7 @@ public class MultipleOccurrencesTest {
     }
 
     @Test
-    public void givenEmptyStringShouldThrowError() {
+    public void givenEmptyStringShouldThrowErrorMessage() {
         //act
         String inputString = "";
         //assert
@@ -49,7 +49,7 @@ public class MultipleOccurrencesTest {
     }
 
     @Test
-    public void givenNumericStringShouldThrowError() {
+    public void givenNumericStringShouldThrowErrorMessage() {
         //act
         String inputString = String.valueOf(12345);
         //assert
@@ -57,7 +57,7 @@ public class MultipleOccurrencesTest {
     }
 
     @Test
-    public void givenEmptyCharacterShouldThrowError() {
+    public void givenEmptyCharacterShouldThrowErrorMessage() {
         //act
         String inputString = "Java is java again java again";
         //assert
@@ -65,7 +65,7 @@ public class MultipleOccurrencesTest {
     }
 
     @Test
-    public void givenDigitShouldThrowError() {
+    public void givenDigitShouldThrowErrorMessage() {
         //act
         String inputString = "Java is java again java again";
         //assert

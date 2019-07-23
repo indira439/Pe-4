@@ -22,7 +22,7 @@ public class CheckPresenceTest {
     }
 
     @Test
-    public void givenStringShouldReturnTrue() {
+    public void givenStringContainingHarryShouldReturnTrue() {
         //act
         String string = "This is Harry";
         //assert
@@ -30,7 +30,7 @@ public class CheckPresenceTest {
     }
 
     @Test
-    public void givenStringShouldReturnFalse() {
+    public void givenStringWithoutHarryShouldReturnFalse() {
         //act
         String string = "This is Henry";
         //assert
@@ -38,7 +38,7 @@ public class CheckPresenceTest {
     }
 
     @Test
-    public void givenEmptyTextShouldReturnFalse() {
+    public void givenEmptyStringShouldReturnFalse() {
         //act
         String string = "";
         //assert
@@ -46,7 +46,7 @@ public class CheckPresenceTest {
     }
 
     @Test(expected = NullPointerException.class)
-    public void givenNullShouldThrowException() {
+    public void givenNullShouldThrowNullPointerException() {
         checkPresence.find(null);
     }
 }

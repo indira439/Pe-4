@@ -27,7 +27,7 @@ public class SortWordsTest {
     }
 
     @Test
-    public void givenTextShouldReturnWordsInAlphabeticOrder() {
+    public void givenParaOfTextShouldReturnWordsOfParaInAlphabeticOrder() {
         //act
         String string = "java is a programming language";
         List<String> expectedResult = new ArrayList<>();
@@ -41,7 +41,7 @@ public class SortWordsTest {
     }
 
     @Test
-    public void givenTextShouldReturnWordsInAlphabeticOrderFailure() {
+    public void givenParaOfTextShouldReturnWordsOfParaInAlphabeticOrderFailure() {
         //act
         String string = "Java is a programming language";
         //assert
@@ -49,7 +49,7 @@ public class SortWordsTest {
     }
 
     @Test
-    public void givenEmptyTextShouldReturnErrorMessage() {
+    public void givenEmptyParaShouldReturnErrorMessage() {
         //act
         String string = "";
         List<String> expectedResult = new ArrayList<>();
@@ -59,7 +59,7 @@ public class SortWordsTest {
     }
 
     @Test(expected = NullPointerException.class)
-    public void givenNullShouldThrowException() {
+    public void givenNullShouldThrowNullPointerException() {
         //assert
         assertEquals("Text is empty",sortWords.sort(null));
     }
